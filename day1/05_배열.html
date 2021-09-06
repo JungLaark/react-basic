@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //불변성 원본 데이터 훼손없이 개발 할 상황이 온다. react에서는 
+        const arr = [10, 20, 30, 40, 50];
+        arr.push(60);
+        arr.push(70);
+        arr.push(80);
+        arr.push(90);
+        console.log(arr);
+        //push는 원본이 바뀌게 된다 
+
+        //불변성 원본유지 카피본으로 작업한다. 이게 react 
+        //concat, slice, 스프레드 연산자를 주로 사용한다. 
+
+        const arr1 = [10, 20, 30, 40, 50];
+        const arr2 =arr1.concat();//카피본 만드는 것
+        console.log('arr1', arr1);
+        console.log('arr2', arr2);
+
+        const arr3 = arr1.concat(66,77,88);
+        console.log('arr3', arr3);
+
+        //slice
+        const arr4 = arr1.slice(1,3);
+        console.log('arr4', arr4);
+
+        //객체 
+        //const dog = {name : 'test'};
+        //dog.name
+
+        //객체 안에 배열이 들어감 
+        const data = [
+            {id: 1, name: '정찬식', age:20},
+            {id: 2, name: '정찬식1', age:20},
+            {id: 3, name: '정찬식3', age:20},
+            {id: 4, name: '정찬식4', age:20}
+        ]
+
+        console.log(data[0].id, data[0].name, data[0].age);
+        console.log(data[1].id, data[1].name, data[1].age);
+        console.log(data[2].id, data[2].name, data[2].age);
+        console.log(data[3].id, data[3].name, data[3].age);
+
+        const data1 = data.concat();
+        const data2 = data.concat({
+            id: 1000,
+            name: 'test',
+            age: 34
+        });
+        console.log('data1', data1);
+        console.log('data2', data2);
+
+        /******************************************************/
+        //
+
+
+    </script>
+</body>
+</html>

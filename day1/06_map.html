@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = [10, 20, 30, 40];
+
+        for(let i=0 ; i<arr.length; i++){
+            console.log(i);
+        }
+
+        for(let item in arr){
+            console.log(item);
+        }
+
+        for(let item of arr){
+            console.log(item);
+        }
+        /******************************************/
+        //JSX
+        //map 쓴다. 
+        arr.map((item, idx) => {
+            return (
+                console.log(idx, item)
+            )
+        });
+
+        console.log('-0------------------');
+        //return 없어도 됨 
+        //결과가 하나 뿐일 경우 
+        arr.map((item, index) => console.log(index, item));
+        console.log('-0------------------');
+
+        /***************************************/
+
+        const data = [
+            {id: 1, name: '정찬식', age:20},
+            {id: 2, name: '정찬식1', age:20},
+            {id: 3, name: '정찬식3', age:20},
+            {id: 4, name: '정찬식4', age:20}
+        ]
+
+        data.map((item, index) => {
+            return(
+                console.log(item.id, item.name, item.age)
+            )
+        });
+
+        data.map((item, index) => {
+            console.log(item.id, item.name, item.age)
+        })
+
+
+    </script>
+</body>
+</html>

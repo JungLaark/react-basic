@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //react JSX 에서는 if/switch/for 사용 불가 
+        //react 함수영역에서는 사용가능 
+        //JSX 안에서는 삼항연산자, &&, || 사용 
+        //조건 && 조건 참의 결과 
+        //조건 || 조건의 거짓의 결과, 값을 찾을 수 없을 떄 
+
+        let done1 = true;
+        let done2 = false;
+        let done3 = undefined;
+
+        //react 에서의 같다는 === 세번써야 한다. 
+        const result1 = done1 === true ? '참' : '거짓';
+        console.log(result1);
+
+        const result2 = done1 = true ? '참' : '거짓';
+        console.log(result2);
+
+        const result3 = done1 === true && '참' //앞의 조건이 맞으면 나옴
+
+        const result4 =  done2 === true || '거짓'//아닐 때 나옴 
+        //리액트 환경에서는 안나온다
+        //js 환경에서 위에 true 가 false이면 true가 나옴 
+        console.log(result4);
+
+        // || 값이 존재하지 않으면 
+        const result5 = done3 || '값 없음'
+        console.log(result5);
+
+        //다중 if 문 못씀 
+        /*
+            다중 if처럼
+            
+            조건1 && '결과1'
+            조건2 && '결과2'
+            조건3 && '결과3'
+            조건4 && '결과4'
+            조건5 && '결과5'
+        */
+
+
+
+    </script>
+</body>
+</html>
