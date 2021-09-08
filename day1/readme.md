@@ -106,10 +106,10 @@
 
         //객체 안에 배열이 들어감 
         const data = [
-            {id: 1, name: '정찬식', age:20},
-            {id: 2, name: '정찬식1', age:20},
-            {id: 3, name: '정찬식3', age:20},
-            {id: 4, name: '정찬식4', age:20}
+            {id: 1, name: 'test1', age:20},
+            {id: 2, name: 'test2', age:20},
+            {id: 3, name: 'test3', age:20},
+            {id: 4, name: 'test4', age:20}
         ]
 
         console.log(data[0].id, data[0].name, data[0].age);
@@ -145,10 +145,10 @@
         /***************************************/
 
         const data = [
-            {id: 1, name: '정찬식', age:20},
-            {id: 2, name: '정찬식1', age:20},
-            {id: 3, name: '정찬식3', age:20},
-            {id: 4, name: '정찬식4', age:20}
+            {id: 1, name: 'test', age:20},
+            {id: 2, name: 'test1', age:20},
+            {id: 3, name: 'test2', age:20},
+            {id: 4, name: 'test4', age:20}
         ]
 
         data.map((item, index) => {
@@ -182,4 +182,7 @@
         const data2 = data.filter(item => item.id === 1);
         console.log(data2);
 ```
+<<<<<<< HEAD:day1/readme.md
 
+=======
+>>>>>>> 3104babac4c14691f864809f272c07dc9f6caa2a:readme.md
