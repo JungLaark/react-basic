@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const dog = {
+            name: '치와와',
+            age: 3
+        }
+        //dog.name
+        //dog['name']
+
+        //const {key, key} = 객체
+        const {name, age} = dog;
+        console.log(name, age);
+        // . 쓰지않고도 출력할 수 있다. 
+
+        const data = {
+            a: 20, b: 30, c: 100
+        }
+
+        const {a, b, c} = data;
+        console.log(a, b, c);
+        //이건 좀 익숙해져야겠다. 
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">화면에 보이는 영역</div>
+    <script type="text/babel">
+
+        const name = '홍길도';
+        const age = 23;
+        const el = (
+            <div>
+                <h2>제목</h2>
+                <ul>
+                    <li>이름1 : name </li>
+                    <li>이름2 : {name} </li>
+                    <li>이름3 : {age}</li>
+                    <li>이름4 : </li>
+                    <li>이름5 : </li>
+                </ul>
+            </div>
+        )
+        
+        //const dom = document.getElementById()
+        const dom = document.querySelector('#root');
+        ReactDOM.render(el, dom);//그려주는 역할 넣어주겠다 
+
+    </script>
+</body>
+</html>

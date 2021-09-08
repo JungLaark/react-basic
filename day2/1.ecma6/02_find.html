@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //배열 객체
+        const data = [
+            {id:1, name:'test1', age:20},
+            {id:2, name:'test2', age:20},
+            {id:3, name:'test3', age:20},
+            {id:4, name:'test4', age:20},
+            {id:4, name:'test5', age:20}
+        ]
+
+        const arr = [10, 20, 30, 40, 50];
+
+        const re1 = arr.find(item => item > 30);
+
+        const re2 = arr.find(item => item === 40);
+        console.log(re2);
+
+        const re3 = data.find(item => item.id === 5);
+
+
+
+    </script>
+</body>
+</html>

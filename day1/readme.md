@@ -10,8 +10,8 @@
     - Auto Complete Tag
     - Auto Import 
     - Auto Rename Tag 추가 
-### javascript 
-#### template literal
+
+### template literal
 ```javascript
         let a = 30;
         const b = 50;
@@ -28,7 +28,7 @@
         let result3 = `${name}은 나이가 ${age} 이고 사는 곳은 ${addr} 입니다.`;
         console.log(result3);
 ```
-#### 연산자 
+### 연산자 
 ```javascript
          //react 에서의 같다는 === 세번써야 한다. 
         const result1 = done1 === true ? '참' : '거짓';
@@ -59,7 +59,7 @@
             조건5 && '결과5'
         */
 ```
-#### 화살표 함수
+### 화살표 함수
 ```javascript
         const make4 = num => {
             console.log(num);
@@ -73,8 +73,8 @@
 
         make5(100, 1200);
 ```
-#### 배열과 객체
-##### push, concat, slice
+
+### push, concat, slice
 ```javascript
         //불변성 원본 데이터 훼손없이 개발 할 상황이 온다. react에서는 
         const arr = [10, 20, 30, 40, 50];
@@ -126,7 +126,7 @@
         console.log('data1', data1);
         console.log('data2', data2);
 ```
-#### map
+### map
 ```javascript
          //JSX
         //map 쓴다. 
@@ -161,7 +161,7 @@
             console.log(item.id, item.name, item.age)
         })
 ```
-#### Filter
+### Filter
 ```javascript
         const arr=[10, 20, 30, 40];
         //item => 조건 
@@ -182,3 +182,4 @@
         const data2 = data.filter(item => item.id === 1);
         console.log(data2);
 ```
+

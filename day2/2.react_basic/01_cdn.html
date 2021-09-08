@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        화면에 보이는 영역
+    </div>
+    <script type="text/babel">
+        //옛 방식 // 태그, 속성, 값
+        const el = React.createElement('h1', {}, '제목');
+        const dom = document.querySelector('#root');//root 찾음 
+        ReactDOM.render(el, dom);//render : 화면에 그리기 
+    </script>
+    
+</body>
+</html>

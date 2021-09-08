@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = ['강아지', '고양이', '야옹이'];
+        const arr1 = arr.concat();
+        const arr2 = [...arr];//배열안에 있는 값 복사
+        console.log('-----');
+        const arr3 = arr.concat('호렁아', '소');
+        const arr4 = [...arr3, '호랑이', '소'];
+        console.log('-----');
+        //키 값들 복사
+        const dog = {name:'치와와', age:3, addr:'서울'};
+        const dog1 = {
+            ...dog, 
+            name: 'test',
+            age: 30,
+            addr: '제주'
+            
+        }//이건 업데이트 됨 
+
+        console.log('dog1 : ', dog1);
+
+        const data = [
+            {id:1, name:'test1', age:20},
+            {id:2, name:'test2', age:20},
+            {id:3, name:'test3', age:20},
+            {id:4, name:'test4', age:20},
+            {id:4, name:'test5', age:20}
+        ]
+
+        const data1 = data.concat({id:6, name:'test6', age:22});
+        const data2 = [
+            ...data,
+            {
+                id: 7,
+                name: "test6",
+                age: 34
+            },
+            {
+                id: 7,
+                name: "test6",
+                age: 34
+            },
+            {
+                id: 7,
+                name: "test6",
+                age: 34
+            }
+        ]
+        //이건 추가가 됨 
+        console.log(data2);
+        /*===============================================*/
+        //갱신
+        const data3 = data.map((item, index) => {
+            if(item.id === 3){
+                return {
+                    ...item,
+                    name: 'laark',
+                    age: 22
+                }
+            }else{
+                return item;
+            }
+        });
+
+        console.log(data3);
+
+        /*===============================================*/
+        const data4 = data.map((item, index) => 
+        item.id === 1 ? {...item, name:'이순신', age:70} : item);
+        console.log(data4);
+        //25분에 시작
+        //{...item, name:'이순신', age:70} -> 1인거 가져오고 name과 age 바꾼다
+
+
+
+    </script>
+</body>
+</html>
