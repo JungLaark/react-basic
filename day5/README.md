@@ -9,8 +9,13 @@ const [변수, 변수를 변경하는 함수(setter)] = React.useState(초기값
 
 const [count, setCount] = useState(0);
 count = 0;
+
+
 setCount(100) => count = 100
 
 ```
+    - 화면 단 제어 
 
-    
+    - addClass removeClass toggleClass?     
+    - react 에서는 
+    - class 와 className 차이는 JSX 에서 
